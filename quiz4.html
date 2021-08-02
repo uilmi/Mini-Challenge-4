@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Quiz 4</title>
+</head>
+
+<body style="display: flex; justify-content: center; align-items: center; height: 50vh;">
+
+    <div id="latar"
+        style="display: flex; justify-content: center; background-color: rgb(147, 147, 235); width: 200px; height: 200px; border: solid rgb(43, 43, 240); border-radius: 10px;">
+
+        <img id="gambar" src="./hand.png" alt="" onclick="changeBg()">
+    </div>
+    <script>
+        function changeBg() {
+
+            const background = document.getElementById("latar");
+            // background.style.backgroundColor = "rgb(235, 147, 213)";
+
+            if (background.style.backgroundColor === "rgb(235, 147, 213)") {
+                background.style.backgroundColor = "rgb(147, 147, 235)";
+            } else {
+                background.style.backgroundColor = "rgb(235, 147, 213)";
+            }
+        }
+    </script>
+</body>
+
+</html>
